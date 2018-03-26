@@ -1,0 +1,70 @@
+<html lang="en" ng-app="StarterApp">
+
+<head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <meta name="viewport" content="initial-scale=1"/>
+
+    <style>
+    .add-hardware-button{
+        background: gray;
+        color: white;
+        font-size: 18px;
+    }
+
+
+    </style>
+
+</head>
+
+
+<body ng-controller="AppCtrl">
+
+<div layout="row" layout-align="center center">
+    <div flex-gt-sm="80" flex="100">
+        <md-card class="md-padding">
+            <img ng-src="http://d1jinoryqag7v6.cloudfront.net/5a0c45e4141bc85b723f23a0" alt="image"
+                 style="border-bottom:solid 1px #cccccc">
+            <md-card-title>
+                <md-card-title-text>
+                    <span title="Bone Carved Finial Curtain Rod Set">
+                        {{ bone }}
+                    </span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <div flex="100" layout="row">
+                    <div flex="70" layout="column">
+                        <p style="margin-bottom: 0;">Material: Bone</p>
+                        <p>Price:
+                            <b>
+                                Rs. 1594/-
+                            </b>
+                        </p>
+                    </div>
+                    <div layout="column">
+                        <a href="">More Details</a>
+                        <md-button class="md-raised add-hardware-button"
+                                   style="background: gray; color: white; font-size: 18px;">ADD
+                        </md-button>
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>
+
+
+<!-- Angular Material Dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+<script src="app.js"></script>
+</body>
+
+</html>
